@@ -14,42 +14,53 @@
 		<div class = 'container-responsive'> 
 			<div class= 'row'>
 				<div class = 'col-md-4'>
-					<h2> Some Section </h2>
-					<p> Some Text </p>
+					<h3> When you were little, your mom thought you were dumb cuz you were 5 and didn't say any words </h3>
+					<p> So she took you to a doctor </p>
 				</div>
 				
 				<div class = 'col-md-4'>
-					<h2> Some Section </h2>
-					<p> Some Text </p>
+					<h3> When you were little, your mom put you on the roof of the car to pick something up on the floor </h3>
+					<p> And your mom forgot about you </p>
 				</div>
 				
 				<div class = 'col-md-4'>
-					<h2> Some Section </h2>
-					<p> Some Text </p>
+					<h3> When you were little, your babysitter had a heart attack, so you went outside to chase a balloon </h3>
+					<p> You got lost and never made it home again </p>
 				</div>
 				
 			</div>
 		</div>
 		
-		<div role="tabpanel">
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">I</a></li>
+  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Suck</a></li>
+  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">At</a></li>
+  
+  <li role="presentation" class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">HTML<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+            <li role="presentation"><a href="#dropdown" aria-controls="profile" role="buton" data-toggle="tab">and CSS</a></li>
+        </ul>
+   </li>
+   
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
+</ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
-  </div>
-
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="home">I see you're drinking 1%</div>
+  <div role="tabpanel" class="tab-pane" id="profile">is it because you think you're fat?</div>
+  <div role="tabpanel" class="tab-pane" id="messages">Cuz you're not.</div>
+  <div role="tabpanel" class="tab-pane" id="dropdown">You could be drinking whole if you wanted to.</div>
 </div>
+
+
+<script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+</script>
+
+<script> $('.dropdown-toggle').dropdown() </script>
 		
 		
 		
